@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/whiteboard", { useNewUrlParser: true });
+const mongoose = require("mongoose");//JIHG2zUljQPpVAC6
+mongoose.connect("mongodb+srv://whiteboarduser:JIHG2zUljQPpVAC6@cluster0.x8qmv.mongodb.net/<dbname>?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
